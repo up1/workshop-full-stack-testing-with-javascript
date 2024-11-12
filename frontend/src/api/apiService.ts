@@ -4,7 +4,7 @@ import type NoteType from '../types/note';
 
 const URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api/';
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: URL,
   headers: {
     'Content-Type': 'application/json',
@@ -57,6 +57,8 @@ export const removeNote = async (id: string) => {
 };
 
 export const getNotes = async () => {
+  console.log('api.get notes');
+  console.log(api.defaults.baseURL);
   const response = await api.get('notes');
   return response;
 };

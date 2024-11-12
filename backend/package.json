@@ -10,7 +10,7 @@
     "test:integration:coverage": "vitest -c ./vitest.config.integration.mts --coverage --run",
     "test:component": "vitest -c ./vitest.config.component.mts --run",
     "test:component:coverage": "vitest -c ./vitest.config.component.mts --coverage --run",
-    "test:contract": "vitest --testTimeout 30000 **/contract/*.spec.ts",
+    "test:contract": "vitest --testTimeout 30000 **/contract/*.spec.ts --run",
     "start:local": "nodemon",
     "start": "node dist/index.js",
     "build": "tsc",

@@ -26,6 +26,9 @@ describe('Pact with NotesBEService', () => {
       withRequest: {
         method: 'GET',
         path: '/api/notes',
+        headers: {
+          Authorization: like('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjY2Y4OWE3ZS1iOTQxLTRmMTctYmJlMC00ZTBjOGIyY2QyNzIiLCJpYXQiOjE3MzE0MzU1NDgsImV4cCI6MTczMTQ0OTk0OH0.uBO5xhqiFAlEdejTXLLFNRt6OwgaRT195gEEmo6hhps'),
+        },
       },
       willRespondWith: {
         status: 200,
@@ -69,6 +72,9 @@ describe('Pact with NotesBEService', () => {
         body: {
           title: 'New Note Title',
           content: 'New Note Content',
+        },
+        headers: {
+          Authorization: like('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjY2Y4OWE3ZS1iOTQxLTRmMTctYmJlMC00ZTBjOGIyY2QyNzIiLCJpYXQiOjE3MzE0MzU1NDgsImV4cCI6MTczMTQ0OTk0OH0.uBO5xhqiFAlEdejTXLLFNRt6OwgaRT195gEEmo6hhps'),
         },
       },
       willRespondWith: {
@@ -115,6 +121,9 @@ describe('Pact with NotesBEService', () => {
           title: 'Updated Note Title',
           content: 'Updated Note Content',
         },
+        headers: {
+          Authorization: like('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjY2Y4OWE3ZS1iOTQxLTRmMTctYmJlMC00ZTBjOGIyY2QyNzIiLCJpYXQiOjE3MzE0MzU1NDgsImV4cCI6MTczMTQ0OTk0OH0.uBO5xhqiFAlEdejTXLLFNRt6OwgaRT195gEEmo6hhps'),
+        },
       },
       willRespondWith: {
         status: 200,
@@ -160,6 +169,9 @@ describe('Pact with NotesBEService', () => {
           title: 'Updated Note Title',
           content: 'Updated Note Content',
         },
+        headers: {
+          Authorization: like('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjY2Y4OWE3ZS1iOTQxLTRmMTctYmJlMC00ZTBjOGIyY2QyNzIiLCJpYXQiOjE3MzE0MzU1NDgsImV4cCI6MTczMTQ0OTk0OH0.uBO5xhqiFAlEdejTXLLFNRt6OwgaRT195gEEmo6hhps'),
+        },
       },
       willRespondWith: {
         status: 404,
@@ -192,6 +204,9 @@ describe('Pact with NotesBEService', () => {
       withRequest: {
         method: 'DELETE',
         path: '/api/notes/0a97f1c3-294e-43e8-b78f-60209e972ee9',
+        headers: {
+          Authorization: like('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjY2Y4OWE3ZS1iOTQxLTRmMTctYmJlMC00ZTBjOGIyY2QyNzIiLCJpYXQiOjE3MzE0MzU1NDgsImV4cCI6MTczMTQ0OTk0OH0.uBO5xhqiFAlEdejTXLLFNRt6OwgaRT195gEEmo6hhps'),
+        },
       },
       willRespondWith: {
         status: 200,

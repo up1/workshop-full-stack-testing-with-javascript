@@ -117,6 +117,7 @@ Contract tests in folder `contract-tests`\
 * consumer.pact.spec.ts
 
 ```
+$export CONTRACT_TEST_AUTH_TOKEN=<your token>
 $npm run test:contract
 ```
 
