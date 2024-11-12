@@ -23,6 +23,11 @@ app.use('/', noteRoutes);
 app.use('/', userRoutes);
 app.use('/', loginRoutes);
 
+// Add health check route
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
