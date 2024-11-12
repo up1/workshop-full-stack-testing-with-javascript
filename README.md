@@ -54,12 +54,25 @@ $npm run test:e2e
 ```
 
 ### Integration test with supertest and vitest
+* Connect to database with [Test container](https://testcontainers.com/)
+  * [PostgreSQL](https://testcontainers.com/modules/postgresql/?language=nodejs)
 ```
 // Run test
+$export DATABASE_URL=postgresql://test:test@localhost:15432/test
 $npm run test:integration
 
 // Run test with coverage
 $npm run test:integration:coverage
+```
+
+### Component/Isolated test with supertest and vitest
+* Connect to mock database or [test double](http://xunitpatterns.com/Test%20Double.html)
+```
+// Run test
+$npm run test:component
+
+// Run test with coverage
+$npm run test:component:coverage
 ```
 
 ## 3. Frontend 
