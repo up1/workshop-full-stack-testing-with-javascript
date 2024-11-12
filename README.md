@@ -46,6 +46,8 @@ $npm run build
 $export JWT_SECRET=1234
 $npm start
 ```
+Access in web browser
+* http://localhost:5000
 
 Run test
 ```
@@ -76,6 +78,7 @@ $npm run test:component:coverage
 ```
 
 ### Contract testing with [Pact](https://docs.pact.io/)
+* Provider
 
 Start server and database before run test
 ```
@@ -83,8 +86,68 @@ $npm run test:contract
 ```
 
 ## 3. Frontend 
+* ReactJS
+```
+$cd frontend
+$npm install
+$npm run build
+
+$export REACT_APP_API_BASE_URL=http://localhost:5000/api/
+$npm start
+```
+Access in web browser
+* http://localhost:3000
 
 ## 4. Frontend Testing
-* End-to-end testing
+* Unit testing
 * Contract testing
-* Component testing
+* End-to-end testing
+
+### Unit testing
+```
+$npm test
+$npm run test:coverage
+```
+
+### Contract testing with [Pact](https://docs.pact.io/)
+* Consumer = frontend
+* Provider = backend
+
+Contract tests in folder `contract-tests`\
+* consumer.pact.spec.ts
+
+```
+$npm run test:contract
+```
+
+Result :
+* Create contract file in folder `pacts/`
+
+### End-to-End testing with [Playwright](https://playwright.dev/)
+* Start backend (nodejs + postgresql)
+
+```
+$cd playwright
+$npm install
+```
+
+Run test
+```
+$export URL=http://localhost:3000
+$npm test
+$npm run test:all
+$npm run test:production
+```
+
+## 5. Working with Docker
+```
+$docker compose build
+
+$export REACT_APP_API_BASE_URL=http://localhost:5000/api/
+$export JWT_SECRET=1234
+$docker compose up -d
+$docker compose ps
+```
+
+Access in web browser
+* http://localhost:3000

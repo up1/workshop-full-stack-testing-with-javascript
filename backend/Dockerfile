@@ -17,7 +17,7 @@ RUN npx prisma generate && \
 # Use a new, clean base image for the runtime
 FROM node:20-alpine
 WORKDIR /usr/src/app
-RUN apk add --no-cache bash
+RUN apk add --no-cache bash curl
 COPY --from=builder /usr/src/app/ ./
 EXPOSE 5000
 CMD ["node", "dist/index.js"]
