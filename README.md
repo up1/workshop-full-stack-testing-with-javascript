@@ -75,9 +75,16 @@ $npm run test:component
 $npm run test:component:coverage
 ```
 
+### Contract testing with [Pact](https://docs.pact.io/)
+
+Start server and database before run test
+```
+$npm run test:contract
+```
+
 ## 3. Frontend 
 
-## 2. Frontend Testing
+## 4. Frontend Testing
 * End-to-end testing
 * Contract testing
 * Component testing
