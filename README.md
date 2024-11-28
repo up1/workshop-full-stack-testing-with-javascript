@@ -85,6 +85,12 @@ Start server and database before run test
 $npm run test:contract
 ```
 
+### Unit testing
+```
+$npm run test:unit
+$npm run test:unit:coverage
+```
+
 ## 3. Frontend 
 * ReactJS
 ```
