@@ -54,7 +54,7 @@ body::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 
 .login-register {
@@ -76,7 +76,7 @@ body::before {
   border: 2px solid white;
   border-radius: 20px;
   width: 260px;
-  height: 350px;
+  height: 320px;
   padding: 10px;
   backdrop-filter: blur(50px);
 

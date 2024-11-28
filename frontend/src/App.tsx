@@ -7,7 +7,6 @@ import {
   Navigate,
 } from 'react-router-dom';
 import NoteApp from './NoteApp';
-import Header from './components/Header';
 import Login from './components/Login';
 import RegistrationForm from './components/RegistrationForm';
 import RegistrationLink from './components/RegistrationLink';
