@@ -31,7 +31,8 @@ $docker compose ps
 * Using [newman](https://www.npmjs.com/package/newman)
 ```
 $cd postman
-$newman run
+$npm install -g newman
+$newman run backend.postman_collection.json
 ```
 
 ### End-to-End testing with supertest and vitest
