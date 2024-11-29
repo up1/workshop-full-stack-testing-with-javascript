@@ -168,3 +168,14 @@ $docker compose ps
 
 Access in web browser
 * http://localhost:3000
+
+
+### Backend testing :: API testing with Postman
+```
+$docker compose up backend_test --abort-on-container-exit --build
+```
+
+### Frontend testing :: [Playwright](https://playwright.dev/docs/docker)
+```
+$docker compose up frontend_test --abort-on-container-exit --build
+```
