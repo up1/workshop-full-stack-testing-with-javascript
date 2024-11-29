@@ -40,7 +40,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-page">
+    <div className="login-page" id="login-page">
       <div className="login-page-form">
         <form onSubmit={handleSubmit}>
           <h3>Existing user login</h3>

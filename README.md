@@ -179,3 +179,10 @@ $docker compose up backend_test --abort-on-container-exit --build
 ```
 $docker compose up frontend_test --abort-on-container-exit --build
 ```
+
+Visual testing
+```
+$npx playwright test login.screen.spec.ts
+$npx playwright test --update-snapshots
+$npx playwright show-report
+```
