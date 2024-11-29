@@ -186,3 +186,9 @@ $npx playwright test login.screen.spec.ts
 $npx playwright test --update-snapshots
 $npx playwright show-report
 ```
+
+### Frontend testing :: [Robot framework](https://robotframework.org/)
+```
+$cd robot
+$robot login.success.robot
+```
