@@ -146,6 +146,15 @@ $npm test
 $npm run test:all
 $npm run test:production
 ```
+Open default report
+```
+$npx playwright show-report
+```
+
+Open [Allure Report](https://allurereport.org/docs/playwright/)
+```
+$allure serve allure-results
+```
 
 ## 5. Working with Docker
 ```
