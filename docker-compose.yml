@@ -51,6 +51,8 @@ services:
     build:
       context: ./postman
       dockerfile: Dockerfile
+    volumes:
+      - ./postman-test-report:/etc/newman/newman
 
   frontend_test:
     build: ./playwright
