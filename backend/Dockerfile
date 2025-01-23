@@ -3,7 +3,7 @@ FROM node:20-alpine AS builder
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 # Install dependencies required for the build
-RUN apk add --no-cache bash openssl3
+RUN apk add --no-cache openssl3
 # Copy package.json, package-lock.json, and TypeScript configuration files
 COPY package.json yarn.lock tsconfig.json ./
 # Install the application dependencies

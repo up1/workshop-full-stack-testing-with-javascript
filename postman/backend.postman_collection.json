@@ -34,7 +34,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5000/api/login"
+				"url": "http://backend:5000/api/login"
 			},
 			"response": []
 		},
@@ -43,7 +43,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:5000/health"
+				"url": "http://backend:5000/health"
 			},
 			"response": []
 		},
@@ -58,7 +58,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:5000/api/notes"
+				"url": "http://backend:5000/api/notes"
 			},
 			"response": []
 		}
