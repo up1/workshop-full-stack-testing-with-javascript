@@ -3,9 +3,8 @@ import axios, { AxiosError } from 'axios';
 import type NoteType from '../types/note';
 
 const URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api/';
-
 export const api = axios.create({
-  baseURL: URL,
+  baseURL: '/api/',
   headers: {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${localStorage.getItem('token')}`,
